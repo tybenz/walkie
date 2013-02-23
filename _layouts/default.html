@@ -7,6 +7,7 @@
   <title>{{ page.title }} | Tyler Benziger</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <link rel="shortcut icon" href="img/favicon.png">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/desktop.css" media="(min-width:40em)">
@@ -18,12 +19,12 @@
 
 <body>
 <div class="wrapper">
-    <a href="https://github.com/tybenz/exemplar"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/tybenz/walkie"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
     {% include header.html %}
 
     <section id="main">
         <article class="container">
-          <h1 class="hero">{{page.title}}</h1>
+          <h1 class="hero">{{page.title}}<img src="{{page.img}}" alt="" /></h1>
           {{ content }}
         </article>
     </section>
