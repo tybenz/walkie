@@ -2,7 +2,7 @@
 title: Walkie
 nav: projects
 layout: default
-img: /img/walkie.png
+img: img/walkie.png
 ---
 
 Stay up-to-date on everything happening on
