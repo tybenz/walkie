@@ -23,7 +23,7 @@ task :generate do
     rm -Rf _cache;
     git add .;
     git commit -m "updating gh-pages";
-    git checkout master;
+    git checkout web;
   CMD
 end # task :generate
 
