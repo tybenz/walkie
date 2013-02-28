@@ -2,6 +2,12 @@
 
 Basecamp notifications via Mac OS X 10.8 Notification Center
 
+## Installation
+
+```
+npm install walkie -g
+```
+
 ## Usage
 
 Start listening for Basecamp updates
