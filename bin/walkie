@@ -2,7 +2,7 @@
 
 if [ "$1" = "on" ];then
   echo "Turning walkie on..."
-  if [ "`node lib/walkie.js check-config`" != "false" ];then
+  if [ "`node ./lib/walkie.js check-config`" != "false" ];then
     node lib/walkie.js on &
     PID=$!
     echo $PID > .pid
