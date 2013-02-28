@@ -6,23 +6,38 @@ img: img/walkie.png
 ---
 
 Stay up-to-date on everything happening on
-[Basecamp](http://basecamp.com). Walkie is a shell script that will
+[Basecamp](http://basecamp.com). Walkie is a nodejs script that will
 notify you when something's going down at HQ.
 
-Just run install.sh and call walkie from anywhere to kick off
-it's listener. If anything new crops up, we'll let you know.
-
-#Configuration
-
-Make sure to tweak your config file. After installing Walkie, open up
-~/.walkie in your favorite text editor, and tweak the values of your
-username, password, account ID, and project ID. Let Walkie take care of
-the rest.
+## Installation
 
 {% highlight shell %}
-USER=tybenz
-PASS=password
-ACCOUNT=1234567
-PROJECT=8910110
-TIME=
+npm install walkie -g
+{% endhighlight %}
+
+## Usage
+
+Start listening for Basecamp updates
+
+{% highlight shell %}
+walkie on
+{% endhighlight %}
+
+Stop listening for Basecamp updates
+
+{% highlight shell %}
+walkie off
+{% endhighlight %}
+
+## Configuration
+
+Walkie needs to know your Basecamp account info to communicate with HQ properly.
+
+Define the following environment variables via export:
+
+{% highlight shell %}
+export WALKIE_USERNAME="tbenzige"
+export WALKIE_PASSWORD="password"
+export WALKIE_ACCOUNTID="123456"
+export WALKIE_PROJECTID="789100"
 {% endhighlight %}
