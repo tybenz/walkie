@@ -1,0 +1,26 @@
+{
+  "name": "walkie",
+  "description": "Basecamp updates via Mac OS X 10.8 Notification Center",
+  "version": "0.1.0",
+  "author": "Tyler Benziger <tabenziger@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tybenz/walkie.git"
+  },
+  "keywords": [
+    "basecamp",
+    "notification center"
+  ],
+  "dependencies": {
+    "strftime": "0.5.1",
+    "request": "1.2.0"
+  },
+  "bin": {
+    "walkie": "./bin/walkie",
+    "terminal-notifier": "./bin/Walkie.app/Contents/MacOS/walkie"
+  },
+  "main": "./lib/walkie",
+  "engines": {
+    "node": "0.8.x"
+  }
+}
