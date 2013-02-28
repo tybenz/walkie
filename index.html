@@ -66,24 +66,36 @@
         <article class="container">
           <h1 class="hero">Walkie<img src="img/walkie.png" alt="" /></h1>
           <p>Stay up-to-date on everything happening on
-<a href="http://basecamp.com">Basecamp</a>. Walkie is a shell script that will
+<a href="http://basecamp.com">Basecamp</a>. Walkie is a nodejs script that will
 notify you when something’s going down at HQ.</p>
 
-<p>Just run install.sh and call walkie from anywhere to kick off
-it’s listener. If anything new crops up, we’ll let you know.</p>
+<h2 id="installation">Installation</h2>
 
-<h1 id="configuration">Configuration</h1>
+<div class="highlight"><pre><code class="shell">npm install walkie -g
+</code></pre></div>
 
-<p>Make sure to tweak your config file. After installing Walkie, open up
-~/.walkie in your favorite text editor, and tweak the values of your
-username, password, account ID, and project ID. Let Walkie take care of
-the rest.</p>
+<h2 id="usage">Usage</h2>
 
-<div class="highlight"><pre><code class="shell"><span class="nv">USER</span><span class="o">=</span>tybenz
-<span class="nv">PASS</span><span class="o">=</span>password
-<span class="nv">ACCOUNT</span><span class="o">=</span>1234567
-<span class="nv">PROJECT</span><span class="o">=</span>8910110
-<span class="nv">TIME</span><span class="o">=</span>
+<p>Start listening for Basecamp updates</p>
+
+<div class="highlight"><pre><code class="shell">walkie on
+</code></pre></div>
+
+<p>Stop listening for Basecamp updates</p>
+
+<div class="highlight"><pre><code class="shell">walkie off
+</code></pre></div>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Walkie needs to know your Basecamp account info to communicate with HQ properly.</p>
+
+<p>Define the following environment variables via export:</p>
+
+<div class="highlight"><pre><code class="shell"><span class="nb">export </span><span class="nv">WALKIE_USERNAME</span><span class="o">=</span><span class="s2">&quot;tbenzige&quot;</span>
+<span class="nb">export </span><span class="nv">WALKIE_PASSWORD</span><span class="o">=</span><span class="s2">&quot;password&quot;</span>
+<span class="nb">export </span><span class="nv">WALKIE_ACCOUNTID</span><span class="o">=</span><span class="s2">&quot;123456&quot;</span>
+<span class="nb">export </span><span class="nv">WALKIE_PROJECTID</span><span class="o">=</span><span class="s2">&quot;789100&quot;</span>
 </code></pre></div>
 
 
