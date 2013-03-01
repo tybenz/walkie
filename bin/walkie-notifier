@@ -2,7 +2,7 @@
 
 PREFIX=`npm config get prefix`
 if [ "`ls $PREFIX/lib/node_modules/walkie/bin/Walkie.app/Contents/MacOS/Walkie 2> /dev/null`" != "" ];then
-  $PREFIX/lib/node_modules/walkie/bin/Walkie.app/Contents/MacOS/Walkie $@
+  $PREFIX/lib/node_modules/walkie/bin/Walkie.app/Contents/MacOS/Walkie "$@"
 else
   echo "walkie-notifier cannot be found"
 fi
