@@ -4,5 +4,5 @@
 /stylesheets/.sass-cache/
 _site/
 _cache/*
-css/
+css/*
 node_modules
