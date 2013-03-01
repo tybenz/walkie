@@ -5,7 +5,7 @@ Basecamp notifications via Mac OS X 10.8 Notification Center
 ## Installation
 
 ```
-npm install walkie -g
+sudo npm install walkie -g
 ```
 
 ## Usage
