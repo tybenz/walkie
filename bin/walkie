@@ -13,12 +13,12 @@ if [ "$1" = "on" ];then
   fi
 elif [ "$1" = "off" ];then
   echo "Turning walkie off..."
-  if [ "`cat .pid`" != "" ];then
+  if [ "`cat /tmp/.walkie-pid`" != "" ];then
     kill `cat /tmp/.walkie-pid`
     echo '' > /tmp/.walkie-pid
   fi
 elif [ "$1" = "-v" ] || [ "$1" = "--version" ];then
-  echo "v0.2.2"
+  echo "v0.2.3"
 else
   echo "
   Usage: walkie [options] [command]
