@@ -4,24 +4,12 @@ PREFIX=`npm config get prefix`
 
 if [ "$1" = "on" ];then
   echo "Turning walkie on..."
-  if [ "`ls "$PREFIX/lib/node_modules/walkie/lib/walkie.js" 2> /dev/null`" != "" ];then
-    if [ "`node $PREFIX/lib/node_modules/walkie/lib/walkie.js check-config`" != "false" ];then
-      node $PREFIX/lib/node_modules/walkie/lib/walkie.js on &
-      PID=$!
-      echo $PID > /tmp/.walkie-pid
-    else
-      echo "Missing Basecamp account information. See walkie --help for configuration instructions"
-    fi
-  elif [ "`ls ./lib/walkie.js 2> /dev/null`" != "" ];then
-    if [ "`node ./lib/walkie.js check-config`" != "false" ];then
-      node lib/walkie.js on &
-      PID=$!
-      echo $PID > /tmp/.walkie-pid
-    else
-      echo "Missing Basecamp account information. See walkie --help for configuration instructions"
-    fi
+  if [ "`walkiejs check-config`" != "false" ];then
+    node walkiejs on &
+    PID=$!
+    echo $PID > /tmp/.walkie-pid
   else
-    echo "Can't find node script"
+    echo "Missing Basecamp account information. See walkie --help for configuration instructions"
   fi
 elif [ "$1" = "off" ];then
   echo "Turning walkie off..."
@@ -30,7 +18,7 @@ elif [ "$1" = "off" ];then
     echo '' > /tmp/.walkie-pid
   fi
 elif [ "$1" = "-v" ] || [ "$1" = "--version" ];then
-  echo "v0.1.6"
+  echo "v0.2.0"
 else
   echo "
   Usage: walkie [options] [command]
