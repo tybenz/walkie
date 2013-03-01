@@ -257,3 +257,6 @@ pre {
 
 .chords strong {
   color: #6ec5ff; }
+
+[data-picture] img {
+  width: 100%; }
