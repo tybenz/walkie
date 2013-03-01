@@ -9,10 +9,13 @@ Stay up-to-date on everything happening on
 [Basecamp](http://basecamp.com). Walkie is a nodejs script that will
 notify you when something's going down at HQ.
 
+Walkie uses a command-line app called [terminal-notifier](http://github.com/alloy/terminal-notifier)
+to send notifications.
+
 ## Installation
 
 {% highlight shell %}
-npm install walkie -g
+sudo npm install walkie -g
 {% endhighlight %}
 
 ## Usage
