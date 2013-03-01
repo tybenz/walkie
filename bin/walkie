@@ -18,7 +18,7 @@ elif [ "$1" = "off" ];then
     echo '' > /tmp/.walkie-pid
   fi
 elif [ "$1" = "-v" ] || [ "$1" = "--version" ];then
-  echo "v0.2.1"
+  echo "v0.2.2"
 else
   echo "
   Usage: walkie [options] [command]
