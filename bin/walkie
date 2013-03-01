@@ -4,9 +4,9 @@ PREFIX=`npm config get prefix`
 
 if [ "$1" = "on" ];then
   echo "Turning walkie on..."
-  if [ "`ls "$PREFIX/node_modules/walkie/lib/walkie.js" 2> /dev/null`" != "" ];then
-    if [ "`node $PREFIX/node_modules/walkie/lib/walkie.js check-config`" != "false" ];then
-      node $PREFIX/node_modules/walkie/lib/walkie.js on &
+  if [ "`ls "$PREFIX/lib/node_modules/walkie/lib/walkie.js" 2> /dev/null`" != "" ];then
+    if [ "`node $PREFIX/lib/node_modules/walkie/lib/walkie.js check-config`" != "false" ];then
+      node $PREFIX/lib/node_modules/walkie/lib/walkie.js on &
       PID=$!
       echo $PID > /tmp/.walkie-pid
     else
@@ -30,7 +30,7 @@ elif [ "$1" = "off" ];then
     echo '' > /tmp/.walkie-pid
   fi
 elif [ "$1" = "-v" ] || [ "$1" = "--version" ];then
-  echo "v0.1.4"
+  echo "v0.1.5"
 else
   echo "
   Usage: walkie [options] [command]
