@@ -44,3 +44,13 @@ export WALKIE_PASSWORD="password"
 export WALKIE_ACCOUNTID="123456"
 export WALKIE_PROJECTID="789100"
 {% endhighlight %}
+
+## Screenshot
+
+<p>
+  <div data-picture data-alt="walkie">
+      <div data-src="/img/walkie-small.png"></div>
+      <div data-src="/img/walkie-big.png" data-media="(min-width: 412px)"></div>
+      <noscript><img src="/img/walkie-big.png" alt="walkie"></noscript>
+  </div>
+</p>
