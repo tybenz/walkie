@@ -5,7 +5,7 @@ PREFIX=`npm config get prefix`
 if [ "$1" = "on" ];then
   echo "Turning walkie on..."
   if [ "`walkiejs check-config`" != "false" ];then
-    node walkiejs on &
+    walkiejs on &
     PID=$!
     echo $PID > /tmp/.walkie-pid
   else
@@ -18,7 +18,7 @@ elif [ "$1" = "off" ];then
     echo '' > /tmp/.walkie-pid
   fi
 elif [ "$1" = "-v" ] || [ "$1" = "--version" ];then
-  echo "v0.2.0"
+  echo "v0.2.1"
 else
   echo "
   Usage: walkie [options] [command]
