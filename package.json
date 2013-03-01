@@ -1,8 +1,9 @@
 {
   "name": "walkie",
   "description": "Basecamp updates via Mac OS X 10.8 Notification Center",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Tyler Benziger <tabenziger@gmail.com>",
+  "preferGlobal": true,
   "repository": {
     "type": "git",
     "url": "http://github.com/tybenz/walkie.git"
@@ -13,7 +14,8 @@
   ],
   "dependencies": {
     "strftime": "0.5.0",
-    "request": "1.2.0"
+    "request": "1.2.0",
+    "commander": "1.1.1"
   },
   "bin": {
     "walkie": "./bin/walkie",
