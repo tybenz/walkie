@@ -2,6 +2,9 @@
 
 Basecamp notifications via Mac OS X 10.8 Notification Center
 
+Walkie uses a command-line app called [terminal-notifier](http://github.com/alloy/terminal-notifier)
+to send notifications.
+
 ## Installation
 
 ```
