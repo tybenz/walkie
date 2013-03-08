@@ -47,3 +47,7 @@ To tell walkie to stop listening:
 
 That's it. You're all done. When something's happening on basecamp,
 walkie should announce it to the chatroom.
+
+## Screenshot
+
+![](/img/walkie-irc.png)
