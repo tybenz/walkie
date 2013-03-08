@@ -1,6 +1,6 @@
 # Description:
 #   Stay up-to-date on Basecamp projects
-#   Powered by http://developer.github.com/v3/repos/hooks/
+#   Powered by https://github.com/37signals/bcx-api/blob/master/sections/events.md
 #
 # Dependencies:
 #   "strftime": "0.5.0"
