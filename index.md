@@ -1,6 +1,7 @@
 ---
 title: Walkie
 nav: projects
+subnav: home
 layout: default
 img: img/walkie.png
 ---
@@ -9,8 +10,11 @@ Stay up-to-date on everything happening on
 [Basecamp](http://basecamp.com). Walkie is a nodejs script that will
 notify you when something's going down at HQ.
 
-Walkie uses a command-line app called [terminal-notifier](http://github.com/alloy/terminal-notifier)
+It uses a command-line app called [terminal-notifier](http://github.com/alloy/terminal-notifier)
 to send notifications.
+
+\* Walkie is also availble as a [hubot script](/hubot)
+
 
 ## Installation
 
