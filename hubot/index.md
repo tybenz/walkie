@@ -5,9 +5,10 @@ subnav: hubot
 layout: hubot
 ---
 
-Frist of all, if you haven't heard of Hubot yet, I suggest you check it out. Hubot is
+First of all, if you haven't heard of
+[Hubot](http://github.com/github/hubot) yet, I suggest you check it out. Hubot is
 incredibly smart chat robot and it is high customizable. I use it in IRC
-everyday. I also am constantly behind on Basecamp activity. So I merged
+everyday. I'm also constantly behind on Basecamp activity. So I merged
 the two.
 
 Once your have your own hubot set up, download walkie.coffee and install
@@ -24,7 +25,7 @@ export HUBOT_WALKIE_ROOMS="comma,separated,list,of,chat,rooms"
 
 From there, you only need to know two commands:
 
-To register a project that you'd like walkie to listen to
+To register a project that you'd like walkie to listen to:
 
 <div class="highlight">
 <pre>
@@ -34,7 +35,7 @@ To register a project that you'd like walkie to listen to
 </pre>
 </div>
 
-To tell walkie to stop listening
+To tell walkie to stop listening:
 
 <div class="highlight">
 <pre>
@@ -43,3 +44,6 @@ To tell walkie to stop listening
 </code>
 </pre>
 </div>
+
+That's it you're all done. When something's happening on basecamp,
+walkie should announce it to the chatroom.
