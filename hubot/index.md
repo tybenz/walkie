@@ -1,5 +1,5 @@
 ---
-title: Hubot Script
+title: Walkie &hearts; Hubot
 nav: projects
 subnav: hubot
 layout: hubot
@@ -45,5 +45,5 @@ To tell walkie to stop listening:
 </pre>
 </div>
 
-That's it you're all done. When something's happening on basecamp,
+That's it. You're all done. When something's happening on basecamp,
 walkie should announce it to the chatroom.
