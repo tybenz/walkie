@@ -37,3 +37,7 @@ export WALKIE_PASSWORD="password"
 export WALKIE_ACCOUNTID="123456"
 export WALKIE_PROJECTID="789100"
 ```
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tybenz/walkie/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
