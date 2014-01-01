@@ -50,4 +50,4 @@ walkie should announce it to the chatroom.
 
 ## Screenshot
 
-![](img/walkie-irc.png)
+![](../img/walkie-irc.png)
