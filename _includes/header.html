@@ -48,14 +48,14 @@
         <nav class="subnav">
             <ul>
                 {% if page.subnav == "walkie-home" %}
-                    <li><a href="/" class="active" data-subnav="walkie-home">Home</a></li>
+                    <li><a href="/walkie" class="active" data-subnav="walkie-home">Home</a></li>
                 {% else %}
-                    <li><a href="/" data-subnav="walkie-home">Home</a></li>
+                    <li><a href="/walkie" data-subnav="walkie-home">Home</a></li>
                 {% endif %}
                 {% if page.subnav == "walkie-hubot" %}
-                    <li><a href="/hubot" class="active" data-subnav="walkie-hubot">Hubot</a></li>
+                    <li><a href="/walkie/hubot" class="active" data-subnav="walkie-hubot">Hubot</a></li>
                 {% else %}
-                    <li><a href="/hubot" data-subnav="walkie-hubot">Hubot</a></li>
+                    <li><a href="/walkie/hubot" data-subnav="walkie-hubot">Hubot</a></li>
                 {% endif %}
                 {% if page.subnav == "download" %}
                     <li><a href="https://rawgithub.com/tybenz/walkie/hubot/walkie.coffee" class="active" data-subnav="download">Download</a></li>
