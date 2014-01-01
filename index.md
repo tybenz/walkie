@@ -1,7 +1,7 @@
 ---
 title: Walkie
 nav: projects
-subnav: home
+subnav: walkie-home
 layout: default
 img: img/walkie.png
 ---

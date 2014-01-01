@@ -47,20 +47,20 @@
         </div>
         <nav class="subnav">
             <ul>
-                {% if page.subnav == "home" %}
-                    <li><a href="/" class="active">Home</a></li>
+                {% if page.subnav == "walkie-home" %}
+                    <li><a href="/" class="active" data-subnav="walkie-home">Home</a></li>
                 {% else %}
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/" data-subnav="walkie-home">Home</a></li>
                 {% endif %}
-                {% if page.subnav == "hubot" %}
-                    <li><a href="/hubot" class="active">Hubot</a></li>
+                {% if page.subnav == "walkie-hubot" %}
+                    <li><a href="/hubot" class="active" data-subnav="walkie-hubot">Hubot</a></li>
                 {% else %}
-                    <li><a href="/hubot">Hubot</a></li>
+                    <li><a href="/hubot" data-subnav="walkie-hubot">Hubot</a></li>
                 {% endif %}
                 {% if page.subnav == "download" %}
-                    <li><a href="https://rawgithub.com/tybenz/walkie/hubot/walkie.coffee" class="active">Download</a></li>
+                    <li><a href="https://rawgithub.com/tybenz/walkie/hubot/walkie.coffee" class="active" data-subnav="download">Download</a></li>
                 {% else %}
-                    <li><a href="https://rawgithub.com/tybenz/walkie/hubot/walkie.coffee">Download</a></li>
+                    <li><a href="https://rawgithub.com/tybenz/walkie/hubot/walkie.coffee" data-subnav="download">Download</a></li>
                 {% endif %}
             </ul>
         </nav>

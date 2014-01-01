@@ -1,7 +1,7 @@
 ---
 title: Walkie &hearts; Hubot
 nav: projects
-subnav: hubot
+subnav: walkie-hubot
 layout: hubot
 ---
 
